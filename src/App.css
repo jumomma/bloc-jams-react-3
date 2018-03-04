@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: url("/assets/images/blurred_backgrounds/blur_bg_3.jpg") center / cover;
 }
 
 .App-logo {
