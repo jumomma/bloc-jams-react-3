@@ -1,29 +1,132 @@
-.App {
-  text-align: center;
-  background: url("/assets/images/blurred_backgrounds/blur_bg_3.jpg") center / cover;
+/* BASE STYLES */
+
+/*.App {
+  margin: 0px;
+  width: 100%
+}*/
+.mdl-layout {
+  margin: 0 auto;
+  max-width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.mdl-layout__content {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+#logo {
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.mdl-layout__header {
+  background: black;
+  height: 100px;
   padding: 20px;
+}
+
+.mdl-navigation__link {
+  font-size: 20px;
+}
+
+.mdl-layout__drawer{
+  background: black;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+/* Landing page */
+
+
+.landing {
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
-.App-intro {
-  font-size: large;
+.hero-title-box {
+  height: 200px;
+  background: url("/assets/images/tex2res4.png") center;
+  margin-bottom: 40px;
+  padding-top: 60px;
+  width: 100%;
+}
+.hero-title {
+  font-weight: bold;
+  font-size: 60px;
+  text-shadow: 2px 2px 2px #757575;
+  text-align: center;
+}
+.selling-points {
+  background: white;
+  width: 50%;
+  color: black;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 25px;
+}
+.point-title {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+.point-description {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Library */
+
+
+.library{
+  width: 100%;
+  background: white;
+}
+.demo-card-square.mdl-card {
+  float: left;
+  margin: 60px 25px 25px 60px;
+}
+.mdl-card__media {
+  margin: 0;
+}
+.mdl-card__media > img {
+  max-width: 100%;
+  height: auto;
+}
+.demo-card-square > .mdl-card__title {
+  background: white;
+  color: black;
+  padding: 0;
+
+}
+.mdl-card__title-text {
+  padding: 5px 0px 0px 16px;
+}
+.demo-card-square > .mdl-card__supporting-text {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.artist-text {
+  margin: 0;
+  padding-left: 16px;
+  text-align: left;
+}
+.songs-count {
+  margin: 0;
+  padding-left: 16px;
+  text-align: left;
+}
+.mdl-card__actions {
+  text-align: center;
+}
+
+/* Album */
+
+.mdl-cell.mdl-cell--8-col {
+  text-align: center;
+}
+#song-list {
+  margin: 0 auto;
 }
