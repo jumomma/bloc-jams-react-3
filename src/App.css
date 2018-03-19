@@ -13,6 +13,7 @@
   width: 100%;
   height: 100%;
   margin: 0px;
+  background: linear-gradient(#321746, #b942f4, #321746);
 }
 
 #logo {
@@ -47,7 +48,7 @@
 
 .hero-title-box {
   height: 200px;
-  background: url("/assets/images/tex2res4.png") center;
+  background: linear-gradient(#321746, #b942f4, #321746);
   margin-bottom: 40px;
   padding-top: 60px;
   width: 100%;
@@ -80,12 +81,33 @@
 
 .library{
   width: 100%;
+}
+
+div.album-card{
+  padding: 20px;
+}
+
+.album-card.demo-card-square > .mdl-card__title {
   background: white;
+  color: black;
+  padding: 0;
+
 }
-.demo-card-square.mdl-card {
+.album-card.demo-card-square > .mdl-card__supporting-text {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.mdl-card__title-text {
+  padding: 5px 0px 0px 16px;
+}
+
+.mdl-card__title.mdl-card--expand {
   float: left;
-  margin: 60px 25px 25px 60px;
+  padding: 0;
 }
+
 .mdl-card__media {
   margin: 0;
 }
@@ -93,21 +115,7 @@
   max-width: 100%;
   height: auto;
 }
-.demo-card-square > .mdl-card__title {
-  background: white;
-  color: black;
-  padding: 0;
 
-}
-.mdl-card__title-text {
-  padding: 5px 0px 0px 16px;
-}
-.demo-card-square > .mdl-card__supporting-text {
-  background: white;
-  color: black;
-  margin: 0;
-  padding: 0;
-}
 .artist-text {
   margin: 0;
   padding-left: 16px;
@@ -124,9 +132,154 @@
 
 /* Album */
 
-.mdl-cell.mdl-cell--8-col {
-  text-align: center;
+.mdl-grid{
+  padding: 0px;
+}
+
+div.album{
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 30px 40px 30px;
+}
+
+/*div.demo-card-square.mdl-card.mdl-shadow--8dp.mdl-cell.mdl-cell--4-col{
+  padding: 0px;
+  margin: 0 auto;
+}*/
+
+/*div.album-cover.mdl-card__title.mdl-card--expand {
+  float: left;
+  padding: 0;
+}*/
+
+
+div.album-image.demo-card-square.mdl-card.mdl-shadow--8dp{
+  margin: 0px 10px 0px 0px;
+  float: left;
+}
+
+img#album-cover-art{
+  width: 100%;
+  margin: 0;
+}
+div.album-info{
+  float: left;
+  margin: 35px 0px 0px 20px;
+}
+
+.album-cover{
+  float: left;
+}
+h1#album-title{
+  color: white;
+  font-size: 48px;
+  margin: 0 0 5px 0;
+}
+
+h2#artist{
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+h3#release-info{
+  color: white;
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+div.artist{
+  font-size: 30px;
 }
 #song-list {
   margin: 0 auto;
+  font-size: 16px;
+  color: white;
+}
+
+table#song-list{
+  width: 75%;
+  background-color: inherit;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+span.song-number{
+  font-size: 18px;
+}
+
+div.player-bar.mdl-cell.mdl-cell--6-col{
+  width: 100%;
+  margin: 30px 0px 50px 0px;
+  padding: 0px;
+  background-color: rgba(0,0,0,.3);
+}
+div.player-bar{
+  margin: 0;
+  height: 100px;
+
+}
+div#buttons{
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 40px;
+  display: inline;
+  float: left;
+}
+
+section#time-control{
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: inline;
+  float: left;
+  color: white;
+}
+
+
+div.current-time{
+  margin-left: 50%;
+}
+
+div.total-time{
+  margin-left: 50%;
+}
+
+div.icon.ion-volume-low{
+  margin-left: 50%;
+}
+
+div.icon.ion-volume-high{
+  margin-left: 50%;
+
+}
+
+section#volume-control{
+  color:white;
+  width: 15%;
+  margin: 0 auto;
+  padding-top: 20px;
+  float: left;
+}
+
+@media screen
+    and (max-width: 740px){
+  .player-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  section#time-control, section#volume-control{
+    width: 100%;
+  }
+  div#buttons{
+    margin: 0 auto;
+    padding: 30px 0px 50px 0px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+
 }
